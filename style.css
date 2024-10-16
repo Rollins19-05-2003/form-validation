@@ -62,6 +62,13 @@ input {
     font-size: 0.9rem;
 }
 
+#show{
+    font-size: small;
+    color: #817f7f;
+    text-align: right;
+    cursor: pointer;
+}
+
 #success {
     text-align: center;
     color: green;

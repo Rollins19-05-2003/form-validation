@@ -9,6 +9,7 @@ const lowercase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
 const btn = document.getElementById('submit--btn');
 const success = document.getElementById('success');
+const show = document.getElementById('show');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -38,6 +39,16 @@ btn.addEventListener('click', (e) => {
 
     }
 
+});
+
+show.addEventListener('click', () => {
+    if (password.type === 'password') {
+        password.type = 'text'; 
+        show.textContent = 'Hide Password'; 
+    } else {
+        password.type = 'password';
+        show.textContent = 'Show Password'; 
+    }
 });
 
 const usernameValidation = () => {
